@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_GRID_ASSIGNMENT_2</title>
+    <style>
+    *{
+        font-size: 30px;
+    }
+    #container div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3,150px);
+        grid-template-rows: repeat(3,150px);
+        gap:15px;
+        padding: 50px;
+        background-color: beige;
+        grid-template-areas: 
+        "a b c"
+        "d e f"
+        "g h i";
+    }
+    img{
+        width: 200px;
+        height: 150px;
+    }
+       
+
+        #container div:nth-child(5){
+          grid-area: d;
+           
+        }
+       
+        #container div:nth-child(7){
+            grid-area: i;
+
+        }
+        
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>IMAGES GRID</h1>
+    <div id="container">
+       
+    <div>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRQrjSrqE4by8gOoIydiUc50BG9ri76nTz0w&usqp=CAU"/> </div>
+<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLP2jxIauKZ8GkpAVWwJWnAm76haeIlOHIag&usqp=CAU"/></div>
+<div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_faanCV9JVkaHoQ2PshnpFOXmXAjQMo4KA&usqp=CAU"/></div>
+<div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvD_813sISTu7MgE3f-gNiMZBwkiLyqdLz3Q&usqp=CAU"/></div>
+<div>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFHgX_gMqh2ylyF-krMczeqnnzXynEtFHyvQ&usqp=CAU"/></div>
+<div>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYPgz4fJAxejF4PUmsAC83oSb47dUhtlTGzQ&usqp=CAU"/></div>
+<div>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzBYX_yW_mjAEQyHKB0MC9K_MfQ1qR2MQSXg&usqp=CAU"/></div>
+<div>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikpscygHq_6SmSy8OG7rrZQ00Ip-T7FEIDQ&usqp=CAU"/></div>
+<div>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAnlkl796VPqhtVkTTyK--eHW29t197I020w&usqp=CAU"/></div>
+
+</div>
+</body>
+</html>
